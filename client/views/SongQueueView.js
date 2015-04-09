@@ -6,8 +6,13 @@ var SongQueueView = Backbone.View.extend({
   },
 
   render: function() {
-     this.$el.html('<h1>Hello</h1>')
-    return $('body').append(this.$el)
+
+    //  this.$el.html('<h1>Hello</h1>')
+    // return $('body').append(this.$el)
+
+    var entryView = new SongQueueEntryView()
+    entryView.render();
+
 
   }
 

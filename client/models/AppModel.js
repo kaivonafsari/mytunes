@@ -36,11 +36,10 @@ var AppModel = Backbone.Model.extend({
       this.get('songQueue').shift();
     }, this);
 
-    params.library.on("ended", function(song){
-      this.get("songQueue").shift();
-      this.get("songQueue").playFirst();
-    }, this);
+    // params.library.on('ended', function(song){
+    //   this.get('songQueue').shift();
+    //   this.get('songQueue').playFirst();
+    // }, this);
   }
 
 });
-      // console.log(this.get('songQueue').at(0))
