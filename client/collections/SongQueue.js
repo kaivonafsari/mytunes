@@ -4,6 +4,7 @@ var SongQueue = Songs.extend({
     // _.each(array, function(el){
     //   el.enqueue
     // });
+    //
 
     this.on("add", function(e){
       if(this.length === 1){
