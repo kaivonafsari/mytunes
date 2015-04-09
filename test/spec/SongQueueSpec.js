@@ -2,6 +2,7 @@ describe('SongQueue', function() {
   var playSpy, songData1, songData2;
 
   beforeEach(function() {
+    console.log(SongQueue.prototype.playFirst)
     playSpy = sinon.spy(SongQueue.prototype, 'playFirst');
     songData1 = {
       artist: 'data',
@@ -21,15 +22,16 @@ describe('SongQueue', function() {
 
   describe('when a song is added', function() {
     describe('when it is the only song in the song queue', function() {
-      xit('plays it', function() {
+      it('plays it', function() {
         var songQueue = new SongQueue();
+        debugger;
         songQueue.add(songData1);
         expect(playSpy).to.have.been.called;
       });
     });
 
     describe('when it is not the only song in the song queue', function() {
-      xit('does nothing', function() {
+      it('does nothing', function() {
         var songQueue = new SongQueue(songData1);
         songQueue.add(songData2);
         expect(playSpy).to.have.not.been.called;
