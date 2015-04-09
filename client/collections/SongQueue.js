@@ -25,7 +25,6 @@ var SongQueue = Songs.extend({
 
   },
   playFirst: function(){
-    console.log("I've been called")
     this.at(0).play();
   }
 });
