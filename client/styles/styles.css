@@ -1,9 +1,16 @@
+body{
+  background-image: url('background.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
 .container{
   display: inline-block;
   border: 2px groove #bbbbbb;
   padding: 7px 20px;
   font-size: 20px;
   font-family: 'Roboto Slab', serif;
+
 
 }
 
@@ -19,17 +26,19 @@
 
 li{
   color:#2980b9;
+  margin-top: -15px;
   background: -webkit-gradient(linear, left top, left bottom,
-  color-stop(0%, white), color-stop(15%, white), color-stop(100%, #D7E9F5));
-  background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%);
+  color-stop(60%, #bbb), color-stop(15%, white), color-stop(100%, #bbb));
+  background: -moz-linear-gradient(top, gray 0%, gray 55%, #D5E4F3 130%);
   -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 0px 1px 6px rgba(23, 69, 88, .5);
 }
 
 li:hover {
   color: #16a085;
-  box-shadow: 10px 10px 5px #888888;
+  box-shadow: 2px 2px 3px #888888;
   border-bottom:none;
+  opacity: 0.7;
 
 }
 
@@ -91,4 +100,5 @@ box-shadow: 2px 2px 4px 0px #006773;
 -webkit-border-radius:7px 7px 7px 7px ;
 border-radius:7px 7px 7px 7px ;
 width: 600px;list-style-type: none;
+opacity: 0.7;
 }
