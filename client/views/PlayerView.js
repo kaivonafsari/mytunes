@@ -15,7 +15,9 @@ var PlayerView = Backbone.View.extend({
 
   setSong: function(song){
     this.model = song;
-
+    if(!this.model.get('url')){
+      this.el.pause();
+    }
     this.render();
   },
 
